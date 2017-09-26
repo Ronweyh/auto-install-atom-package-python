@@ -15,11 +15,13 @@ def readConfig(file='extension.conf'):
     cfg = ConfigParser()
     cfg.read(file)
     packageDir = cfg.get('PackageDir', 'address')
-    extensionList = cfg.get('ExtensionAddress', 'address').split(',')
+    extensionList = cfg.items('ExtensionList')
     print('切换到atom插件目录--->')
     os.chdir(packageDir)
-    for extension in extensionList:
-        gitCommand = 'git clone ' + extension
+    for ex in extensionList:
+        dirname = ex[0]
+        packageAddress = ex[1]
+        gitCommand = 'git clone ' + packageAddress + ' ' + dirname
         os.system(gitCommand)
     install(packageDir)
 
