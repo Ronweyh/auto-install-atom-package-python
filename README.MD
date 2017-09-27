@@ -1,4 +1,5 @@
 ### EXAMPLE
+命令行执行(需要python环境)
 ```bash
 python3 AtomExtension.py
 ```
