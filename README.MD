@@ -1,13 +1,23 @@
+<<<<<<< HEAD
 - atom插件被墙, 应用内无法下载, 通过git来执行安装可以快速安装, 通过python来执行git命令并到相应目录安装插件依赖
 
 ### 安装插件
+=======
+### EXAMPLE
+命令行执行(需要python环境)
+>>>>>>> origin/master
 ```bash
 python3 installExtension.py
 ```
+<<<<<<< HEAD
 ### 更新插件(默认更新所有通过conf文件安装的插件)
 ```bash
 python3 updateExtension.py
 ```
+=======
+
+> atom插件被墙, 应用内无法下载, 通过git来执行安装可以快速安装, 通过python来执行git命令并到相应目录安装插件依赖
+>>>>>>> origin/master
 
 **extension.conf为配置文件**
 
