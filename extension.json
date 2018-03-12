@@ -1,0 +1,35 @@
+{
+    "packageDir": "/Users/showtime/.atom/packages/",
+    "packageList": {
+        "activate-power-mode": "https://github.com/JoelBesada/activate-power-mode.git",
+        "atom-beautify": "https://github.com/Glavin001/atom-beautify.git",
+        "atom-ternjs": "https://github.com/tststs/atom-ternjs.git",
+        "autoclose-html": "https://github.com/mattberkowitz/autoclose-html.git",
+        "autocomplete-paths": "https://github.com/atom-community/autocomplete-paths.git",
+        "emmet": "https://github.com/emmetio/emmet-atom.git",
+        "file-icons": "https://github.com/file-icons/atom.git",
+        "highlight-selected": "https://github.com/richrace/highlight-selected.git",
+        "markdown-preview-plus": "https://github.com/atom-community/markdown-preview-plus.git",
+        "merge-conflicts": "https://github.com/smashwilson/merge-conflicts.git",
+        "minimap": "https://github.com/atom-minimap/minimap.git",
+        "pigments": "https://github.com/abe33/atom-pigments.git",
+        "platformio-ide-terminal": "https://github.com/platformio/platformio-atom-ide-terminal.git",
+        "pretty-json": "https://github.com/federomero/pretty-json.git",
+        "simplified-chinese-menu": "https://github.com/chinakids/atom-simplified-chinese-menu.git",
+        "sync-settings": "https://github.com/atom-community/sync-settings.git",
+        "language-vue-component": "https://github.com/CYBAI/language-vue-component.git",
+        "language-vue": "https://github.com/hedefalk/atom-vue.git",
+        "atom-ide-ui": "https://github.com/facebook-atom/atom-ide-ui.git",
+        "ide-vue": "https://github.com/rwatts3/atom-ide-vue.git",
+        "ide-python": "https://github.com/lgeiger/ide-python.git",
+        "intentions": "https://github.com/steelbrain/intentions.git",
+        "prettier-atom": "https://github.com/prettier/prettier-atom.git",
+        "busy-signal": "https://github.com/steelbrain/busy-signal.git",
+        "autocomplete-python": "https://github.com/autocomplete-python/autocomplete-python.git",
+        "react": "https://github.com/orktes/atom-react.git",
+        "todo-show": "https://github.com/mrodalgaard/atom-todo-show.git"
+    },
+    "updateList": [
+        "ide-vue"
+    ]
+}

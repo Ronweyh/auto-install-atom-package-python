@@ -1,7 +1,6 @@
 import os
-from configparser import ConfigParser
 import sys
-
+import json
 
 def updateAllPackage(packageDir, updateList):
     os.chdir(packageDir)
@@ -12,20 +11,18 @@ def updateAllPackage(packageDir, updateList):
             os.system(installCommand)
 
 
-def update(select="1", file="extension.conf"):
+def update(select="1", file="extension.json"):
     print('配置读取中...')
-    updateList = []
-    cfg = ConfigParser()
-    cfg.read(file)
-    packageDir = cfg.get('PackageDir', 'address')
-    extensionList = cfg.items('ExtensionList' if select == '1' else 'UpdateList') # 读取配置
+    cfg = ''
+    with open(file, 'r', encoding='utf-8') as file:
+        cfg = json.loads(file.read())
+    packageDir = cfg['packageDir']
+    extensionList = cfg['packageList'] # 读取配置
+    exNames = extensionList.keys()
     print('切换到atom插件目录--->')
     os.chdir(packageDir)
-    for ex in extensionList:
-        dirname = ex[0]
-        updateList.append(dirname)
     # install(packageDir)
-    updateAllPackage(packageDir, updateList)
+    updateAllPackage(packageDir, exNames)
 
 if __name__ == '__main__':
     args = sys.argv
