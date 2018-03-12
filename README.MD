@@ -9,10 +9,10 @@ python3 installExtension.py
 python3 updateExtension.py
 ```
 
-**extension.conf为配置文件**
+**extension.json为配置文件**
 
 1. PackageDir的address为atom的插件路径, Mac与windows有差别, 修改为正确路径即可(默认是个人Mac路径)
-2. ExtensionList的等号左侧名字(key)为插件名称即文件夹名字, 等号右边(value)为仓库地址, 根据自己需求添加即可
+2. packageList是插件名(key)和仓库地址(value), 根据自己需求添加即可
 3. git和npm建议设置代理, 不然依然很慢(git需要ss之类代理)
 - npm config set registry https://registry.npm.taobao.org
 - git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
